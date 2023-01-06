@@ -1,181 +1,285 @@
 /* Общие стили */
 
 body {
-    font-size: 16px;
-    line-height: 120px;
-    font-family: "Montserrat", "Arial", sans-serif;
-    font-weight: normal;
-    color: #000000;
-    background: #FFFFFF;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  color: #AE7C78;
+  background: #FFFFFF;
 }
 
-.buttons {
-    background: #D89999;
-    border-radius: 40px;
-    color: #FFFFFF;
+.button {
+  display: inline-block;
+  text-align: center;
+  background: #D89999;
+  border-radius: 40px;
+  color: #FFFFFF;
+  padding: 30px 105px;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Navigation  */
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item-link {
+  text-decoration: none;
+  color: #000;
 }
 
 /* Стили для promo */
 
 .promo-heading {
-    font-family: "Playfair Display", "Times New Roman", serif;
-    font-size: 44px;
-    line-height: 59px;
-    font-weight: 400;
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: 44px;
+  line-height: 59px;
+  font-weight: 400;
 }
 
 .promo-heading span {
-    font-style: bold;
+  font-style: bold;
+  font-style: italic;
 }
 
 .promo-text {
-    font-size: 24px;
-    line-height: 29px;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 /* Стили для advantages */
 
+.advantages-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .advantages-heading {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+  font-weight: 500;
 }
 
 /* Стили для popular */
 
-.poplar-heading {
-    font-family: "Montserrat", "Arial", sans-serif;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 48px;
-    letter-spacing: 0.02em;
+.popular-heading {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
 }
 
 .popular-slider-list {
-    list-style: none;
+  list-style: none;
 }
 
 .popular-slide-heading {
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 29px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 .popular-slide-price {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 .popular-slider-button {
-    background-color: transparent;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 /* Стили для type */
 
+.type-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.type-item {
+  width: 388px;
+  height: 442px;
+  background-image: url(../img/select-1.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.type-item:nth-child(2) {
+  background-image: url(../img/select-2.jpg);
+}
+
+.type-item:nth-child(3) {
+  background-image: url(../img/select-3.jpg);
+}
+
 .type-link {
-    background: rgba(174, 124, 120, 0.6);
-    background-size: cover;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 40px 0px;
+  background: rgba(174, 124, 120, 0.6);
+  background-size: cover;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
 }
 
 .type-heading {
-    font-family: "Playfair Display", "Times New Roman", serif;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 48px;
-    letter-spacing: 0.02em;
-    color: #000000;
+  margin: 0;
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  color: #fff;
 }
 
 .type-text {
-    color: #FFFFFF;
-    margin: 0;
+  margin: 0;
+  color: #fff;
 }
 
 /* Стили для sale */
 
 .sale-block {
-    background: #AE7C78;
+  background: #AE7C78;
 }
 
 .sale-heading {
-    font-family: "Playfair Display", "Times New Roman", serif;
-    font-weight: normal;
-    font-size: 44px;
-    line-height: 59px;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 59px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
 }
 
 .sale-text {
-    font-size: 24px;
-    line-height: 29px;
-    color: #FFFFFF;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.sale-image {
+  display: block;
 }
 
 /* Стили для steps */
 
 .steps-heading {
-    font-family: "Playfair Display", "Times New Roman", serif;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 48px;
-    letter-spacing: 0.02em;
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
 }
 
+.steps-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 .steps-subheading {
-    font-weight: 500;
+  font-weight: 500;
+}
+
+.steps-text {
+  font-weight: 400;
 }
 
 /* Стили для reviews */
 
 .reviews-heading {
-    font-family: "Playfair Display", "Times New Roman", serif;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 48px;
-    letter-spacing: 0.02em;
-    text-align: center;
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.reviews-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .reviews-item {
-    text-align: left;
+  text-align: left;
+}
+
+.reviews-item blockquote {
+  margin: 0;
+  font-weight: 400;
 }
 
 .reviews-item cite {
-    font-style: normal;
-    font-weight: 500;
+  font-style: normal;
+  font-weight: 500;
 }
 
 /* Стили для map */
 
 .contacts {
-    font-size: 6px;
-    line-height: 20px;
-    background: #F7FAFC;
-    box-shadow: 0px 4px 40px rgba(217, 217, 217, 0.3);
+  background: #F7FAFC;
+  box-shadow: 0px 4px 40px rgba(217, 217, 217, 0.3);
 }
 
 .contacts-heading {
-    font-family: "Playfair Display", "Times New Roman", serif;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 48px;
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
 }
 
 .contacts dd {
-    font-weight: 500;
+  margin: 0;
+  font-weight: 500;
+}
+
+.contacts dd > a {
+  color: #AE7C78;
+  text-decoration: none;
 }
 
 /* Стили для page-footer */
 
 .page-footer {
-    background: #AE7000;
-    color: #FFFFFF;
+  background: #AE7C78;
+  color: #FFFFFF;
+}
+
+.footer-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-nav-link {
-    color: #FFFFFF;
+  color: #FFFFFF;
+  text-decoration: none;
 }
-

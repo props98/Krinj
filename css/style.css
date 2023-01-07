@@ -8,10 +8,12 @@ body {
     font-weight: normal;
     color: #AE7C78;
     background: #FFFFFF;
+    margin: 0;
+    margin-top: 26px;
 }
 
 img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -65,6 +67,7 @@ a:active {
     margin: 0 auto;
     width: 1200px;
     padding: 0 10px;
+    position: relative;
 }
 
 .content-container-small {
@@ -75,17 +78,15 @@ a:active {
 /* Стили для header */
 
 .page-header {
-    /* margin-top: 1125px; */
     padding: 22px 0 21px;
     border-top: 1px solid #AE7C78;
     border-bottom: 1px solid #AE7C78;
-    position: relative;
 }
 
 .logo {
     position: absolute;
-    top: 150%;
-    left: 50%;
+    top: 50%;
+    left: 49%;
     transform: translate(-50%, -50%);
 }
 
@@ -93,7 +94,7 @@ a:active {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: space-between;
     padding: 0;
     margin: 0;
 }
@@ -166,6 +167,10 @@ a:active {
 .advantages-item {
     display: flex;
     align-items: flex-start;
+}
+
+.advantages-block {
+  margin-left: 20px;
 }
 
 .advantages-heading {
@@ -283,7 +288,7 @@ a:active {
 .type-list {
     list-style: none;
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
     grid-template-rows: 442px;
     padding: 0;
@@ -305,6 +310,18 @@ a:active {
     border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
+}
+
+.type-item:nth-child(1) {
+  background-image: url(../img/select-1.jpg);
+}
+
+.type-item:nth-child(2) {
+  background-image: url(../img/select-2.jpg);
+}
+
+.type-item:nth-child(3) {
+  background-image: url(../img/select-3.jpg);
 }
 
 .type-link:hover {
@@ -342,10 +359,11 @@ a:active {
 .sale-block {
     background: #AE7C78;
     display: flex;
+    justify-content: space-between;
 }
 
 .sale-text-block {
-    padding: 20px 42px 34px 152px;
+    padding: 40px 40px 64px 102px;
 }
 
 .sale-heading {
@@ -387,7 +405,7 @@ a:active {
 .steps-list {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     padding: 0;
     margin: 0;
     text-align: center;
@@ -396,7 +414,7 @@ a:active {
 .steps-item {
     margin-right: 20px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
